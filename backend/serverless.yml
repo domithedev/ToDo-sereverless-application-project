@@ -59,6 +59,7 @@ functions:
       - Effect: Allow
         Action:
           - xray:PutTraceSegments
+          - xray:PutTelemetryRecords
         Resource: 
           - '*'
 
@@ -85,6 +86,7 @@ functions:
       - Effect: Allow
         Action:
           - xray:PutTraceSegments
+          - xray:PutTelemetryRecords
         Resource: 
           - '*'
 
@@ -112,6 +114,7 @@ functions:
       - Effect: Allow
         Action:
           - xray:PutTraceSegments
+          - xray:PutTelemetryRecords
         Resource: 
           - '*'
 
@@ -134,6 +137,7 @@ functions:
       - Effect: Allow
         Action:
           - xray:PutTraceSegments
+          - xray:PutTelemetryRecords
         Resource: 
           - '*'
 
@@ -153,6 +157,7 @@ functions:
         Action:
           - s3:*
           - xray:PutTraceSegments 
+          - xray:PutTelemetryRecords
         Resource: arn:aws:s3:::${self:provider.environment.S3_BUCKET_NAME}/*
 
 resources:
